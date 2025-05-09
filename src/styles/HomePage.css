@@ -1,0 +1,36 @@
+.container-list-movie {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  justify-content: space-around;
+  gap: 65px;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+  padding: 50px;
+  font-size: 65px;
+  margin-top: 6px;
+}
+
+.h1-black{
+  font-weight: bolder;
+  font-size: 64.7px;
+}
+
+.footer {
+  margin-bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #dedcdd;
+  height: 25px;
+  width: 100%;
+  padding: 0.5%;
+}
+
+.container-home{
+  z-index: 1000;
+}
