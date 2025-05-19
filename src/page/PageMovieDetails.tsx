@@ -7,15 +7,10 @@ import { toast } from 'react-toastify';
 import GenreList from '../models/GenreList';
 
 const PageMovieDetails: React.FC = () => {
-  // Obtener el parámetro de la URL (en este caso, el ID de la película)
-  //usa useparams para acceder a id de la peli
   const { id } = useParams<{ id: string }>();
-  //almaceno info de pelicula y genres
   const [movie, setMovie] = useState<Movie | null>(null);
-  //newMap se actualiza con los géneros de películas obtenidos desde el servidor cuando se monta el componente mediante el primer efecto de useEffect.
   const [genres, setGenres] = useState<Map<number, string>>(new Map());
 
-  //se activa cuando carganmos los generos
   useEffect(() => {
     getMovieGenres()
       .then((data: GenreList) => {
@@ -53,7 +48,6 @@ const PageMovieDetails: React.FC = () => {
     }
   }, [id, genres]);
 
-  //rendericé el mensaje si la peli no se carga
   if (!movie) {
     return <div>Cargando...</div>;
   }

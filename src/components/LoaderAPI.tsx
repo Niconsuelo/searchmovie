@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/LoaderAPI.css"; // Estilos opcionales para el loader
+import "../styles/LoaderAPI.css"; 
 
 const Loader: React.FC = () => {
   return (

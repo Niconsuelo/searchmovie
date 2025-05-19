@@ -3,7 +3,7 @@
 }
 .container-movie-details {
   display: flex;
-  background-color: #200e1a;
+  background-color: #1e7b789e;
   color: #ffffff;
   flex-direction: row;
   height: 528px;
@@ -16,16 +16,19 @@
   text-transform: uppercase;
   font-size: xx-large;
   margin: 4px 6px px -2px;
+  font-weight: lighter;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .text-movie-details {
   font-weight: lighter;
-  color: rgba(255, 255, 255, 0.607);
-  opacity: 0.5;
-  text-align: justify; /* Justificar el texto */
-  word-wrap: break-word; /* Permite que las palabras largas se dividan y envuelvan a la siguiente línea */
-  overflow-wrap: break-word; /* Lo mismo que word-wrap, más compatible */
+  color: rgb(149, 145, 145);
+  opacity: 0.8;
+  text-align: justify; 
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
   hyphens: auto;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .align-movie-details {
@@ -58,4 +61,33 @@
 }
 .react-responsive-modal-closeButton {
   fill: white;
+}
+.container-popularity{
+  display: flex;
+  align-items: center;       /* Centra verticalmente ícono y texto */
+  gap: 0.5rem;               /* Espacio entre ícono y texto */
+  color: #facc15;            /* Amarillo dorado (puedes ajustar) */
+  font-size: 1rem;
+}
+
+.container-close-back {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icon-back,
+.icon-close {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.icon-back:hover,
+.icon-close:hover {
+  color: #0fedd7; /* amarillo brillante */
+  transform: scale(1.2);
 }

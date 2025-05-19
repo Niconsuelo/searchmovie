@@ -5,6 +5,4 @@ interface GenreList {
   genreMap: Map<number, string>;
 }
 
-
-
 export default GenreList;
