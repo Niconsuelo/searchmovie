@@ -9,12 +9,13 @@ h1 {
   text-transform: uppercase;
   font-weight: lighter;
   color: white;
-  padding: 50px;
-  font-size: 65px;
-  margin-top: 6px;
+  padding: 25px;
+  font-size: 55px;
+
+  margin: 0%;
 }
 
-.h1-black{
+.h1-black {
   font-weight: bolder;
   font-size: 64.7px;
 }
@@ -31,6 +32,36 @@ h1 {
   padding: 0.5%;
 }
 
-.container-home{
+.container-home {
   z-index: 1000;
+}
+
+.title-home {
+  font-size: 60px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  font-weight:100;
+  padding: 10px;
+  margin-top: 20px;
+}
+.title-home-name {
+  font-size: 60px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px rgb(98, 119, 119),
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 80px #0ff;
 }

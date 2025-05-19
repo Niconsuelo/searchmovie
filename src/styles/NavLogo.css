@@ -1,0 +1,84 @@
+
+/* --- contenedor principal ----------------------------------------- */
+.navbar {
+    display: flex;
+    flex-direction: row;   
+    align-items: center;
+    gap: 11rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* --- brand --------------------------------------------------------- */
+  .navbar__brand {
+    display: flex;
+    align-items: center;
+    gap: 11rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* --- lista de enlaces --------------------------------------------- */
+  .navbar__list {
+    display: flex;           
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 12rem;
+  }
+  
+  /* --- ítem & enlace ------------------------------------------------- */
+  .navbar__item { margin: 0; }
+  
+  .navbar__link {
+    background: transparent;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    text-decoration: none;
+    font: inherit;
+    color: #3d3c3c;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar__link:hover,
+  .navbar__link--active {
+    color: #faf5f5;
+    background-color: #37b8b8;
+    color: rgb(28, 63, 63);
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
+  }
+  
+  /* --- buscador ------------------------------------------------------ */
+  .navbar__search {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;        
+  }
+  
+  .navbar__search input {
+    padding: 0.4rem 0.6rem;
+  }
+  
+  .navbar__search button {
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .nav-logo{
+    width: 150px;
+  }
+
+  .button-search{
+    color: rgb(113, 114, 114);
+    border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 120px;
+  }
+  .input-search{
+    border-radius: 10px;
+  }
