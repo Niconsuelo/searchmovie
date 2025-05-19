@@ -7,27 +7,20 @@ interface OptionProps {
   options: GenresOptions[];
   selected: GenresOptions | null;
   onChangeOption: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-  name: string
+  name: string;
 }
 
 const SelectComponent: React.FC<OptionProps> = ({
   options,
   selected,
   onChangeOption,
-  name
- 
+  name,
 }) => {
-
   return (
-    //renderizado
-
     <div>
       <select
         className="select-nav-bar"
-        // selectoption no es null, usamos selectedoption.value
-        // selectedOption es null, usamos una cadena vacía ''
         value={selected ? selected.value : ""}
-        // maneja los cambios en select
         onChange={onChangeOption}
       >
         <option value="" disabled>
@@ -43,9 +36,5 @@ const SelectComponent: React.FC<OptionProps> = ({
     </div>
   );
 };
-//map itera sobre options
-//renderiza option
-//key clave unica para cada opcion
-// value valor de la opcion
-//option laber texto visible de la opcion
+
 export default SelectComponent;

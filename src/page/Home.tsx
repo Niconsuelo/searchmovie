@@ -6,7 +6,6 @@ import "../styles/HomePage.css";
 import "../styles/MovieList.css";
 import "../styles/NavBar.css";
 import { getMovieGenres, getMovies } from "../services/APIService";
-import Movie from "../models/Movie";
 //import Loader from "../components/LoaderAPI";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -17,6 +16,11 @@ import NavBar from "../components/Navbar";
 import { useSearchParams } from "react-router-dom";
 import GenreList from "../models/GenreList";
 import GenresOptions from "../models/GenresOptions";
+import Movie from "../models/Movie";
+import CarouselMovie from "../components/CarouselMovie";
+import { moviesData } from "../data/moviesData";
+import logo3 from "../assets/logo3.png";
+import NavBarLogo from "../components/NavLogo";
 
 const Home: React.FC = () => {
   const selectOptionSort: GenresOptions[] = [
@@ -187,12 +191,21 @@ const Home: React.FC = () => {
     });
   };
 
+  const items = ["Inicio", "Filtros", "Contacto"];
+
   return (
     <div className="container-home">
-      <h1>
-        descubre los clásicos de culto en{" "}
-        <span className="h1-black">cinema paraíso</span>
-      </h1>
+      <div className="nav-logo">
+        <NavBarLogo imageSrcPath={logo3} navItems={items} />
+      </div>
+
+      <div className="title-home">descubre los clásicos de culto en</div>
+      <div className="title-home-name">cinema paraiso</div>
+
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: 20 }}>
+        <CarouselMovie movies={moviesData} />
+      </div>
+
       <NavBar
         genreOptionProps={genreOption}
         onChangeProps={OnChangeOption}

@@ -21,19 +21,12 @@ const NavBar: React.FC<NavBarProps> = ({
   selectOption,
   onClick,
   selectorSort,
- OnChangeSortBy,
- sortBy,
-
+  OnChangeSortBy,
+  sortBy,
 }) => {
-  /* lo que pasara al hacer click en button del nav
-  function handleClick() {
-    alert("hiciste click en el primer button de nav bar");
-  }
-  */
-
   return (
     <div className="container-nav-bar">
-      <ButtonNav text="Ir al inicio" onClick={onClick} />
+      <ButtonNav text="Ir al inicio" onClick={onClick}/>
       <ListOptions
         options={genreOptionProps}
         onChangeOption={onChangeProps}
@@ -47,7 +40,6 @@ const NavBar: React.FC<NavBarProps> = ({
         name="Ordenar Por"
       />
       <ButtonNav text="Limpiar filtros" onClick={onClick} />
-   
     </div>
   );
 };
