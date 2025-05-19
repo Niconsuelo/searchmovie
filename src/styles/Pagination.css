@@ -7,7 +7,7 @@
 }
 
 .pagination-button {
-  background-color: #fff;
+  background-color: #9492926a;
   border-radius: 10px;
   height: 40px;
 }
@@ -19,7 +19,7 @@
 }
 
 .pagination-button-chanext {
-  background-color: #fff;
+  background-color: #9492926a;
   border-radius: 10px;
   height: 29px;
   width: 59px;
@@ -38,20 +38,20 @@
   border-style: hidden;
 }
 .pagination-active {
-    background-color: #4d2c44;
-    color: #dedcdd;
+    background-color: rgb(19, 160, 160);
+    color: #f2ededf2;
     border-color: #dedcdd;
 }
 
 .pagination-container div:hover:not(.active) {
-  background-color: #4d2c44;
-  color: #dedcdd;
+  background-color: rgb(79, 208, 208);
+  color: #f0eded6a;
   border-color: #dedcdd;
 }
 
 .pagination-container button:hover:not(.active) {
-  background-color: #4d2c44;
-  color: #dedcdd;
+  background-color: rgb(79, 208, 208);
+  color: white;
   border-color: #dedcdd;
 }
 

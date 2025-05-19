@@ -74,11 +74,17 @@
   }
 
   .button-search{
-    color: rgb(113, 114, 114);
+    color: rgb(246, 240, 240);
+    border: none;
+    border-color: #5a5959c1;
     border-radius: 10px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 120px;
+    background-color: #151515;
   }
   .input-search{
     border-radius: 10px;
+    background-color: #9492926a;
+    border: none;
+    width: 190px;
   }

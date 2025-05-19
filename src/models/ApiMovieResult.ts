@@ -1,4 +1,3 @@
-/* datos de la película desde la API */
 interface ApiMovieResult {
   adult: boolean;
   backdrop_path: string;

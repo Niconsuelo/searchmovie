@@ -1,8 +1,6 @@
 import "../styles/ListOptions.css";
 import GenresOptions from "../models/GenresOptions";
 
-//interface GenresOptions contiene value, label.
-
 interface OptionProps {
   options: GenresOptions[];
   selected: GenresOptions | null;

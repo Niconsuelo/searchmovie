@@ -13,8 +13,8 @@ const CarouselMovie: React.FC<Props> = ({ movies }) => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,         // <-- activa el autoplay
-  autoplaySpeed: 2000, 
+    autoplay: true,
+    autoplaySpeed: 2000,
     speed: 400,
     slidesToShow: 3,
     slidesToScroll: 1,
